@@ -1,5 +1,97 @@
 import java.util.Scanner;
 public class Main {
+    // public class RomanNumber extends MyNumber{
+    //     String number;
+    //     public RomanNumber(final String number) {
+    //         this.number = number;
+    //     }
+
+    //     int romanNumberToInt(String string) throws
+    //     Exception {
+    //         String [] romanNumbers = {"I","II","III","IV","V","VI","VII","VIII","IX","X"};
+    //         boolean flag = true;
+    //         for (int i = 0; i < 10 && flag; i++) {
+    //             if (string.equals(romanNumbers[i])) {
+    //                 flag = false;	            
+    //                 return ++i;
+    //             }
+    //         }
+    //         if (flag)
+    //         throw new
+    //             Exception("Ошибка! Число либо неположительно, либо больше 10");
+    //        return Integer.parseInt(string);
+    //     }
+
+    //     String IntToRomanNumber(int number) throws 
+    //     Exception {
+    //         if (number < 1 || number > 100)
+    //             throw new
+    //             Exception("Ошибка! Римсое число не может быть неположительным"); 
+    //         else{ 
+    //             String result = "";
+    //             while (number >= 100) {
+    //                 result += "C";
+    //                 number -= 100;
+    //             }
+    //             while (number >= 90) {
+    //                 result += "XC";
+    //                 number -= 90;
+    //             }
+    //             while (number >= 50) {
+    //                 result += "L";
+    //                 number -= 50;
+    //             }
+    //             while (number >= 40) {
+    //                 result += "XL";
+    //                 number -= 40;
+    //             }
+    //             while (number >= 10) {
+    //                 result += "X";
+    //                 number -= 10;
+    //             }
+    //             while (number >= 9) {
+    //                 result += "IX";
+    //                 number -= 9;
+    //             }
+    //             while (number >= 5) {
+    //                 result += "V";
+    //                 number -= 5;
+    //             }
+    //             while (number >= 4) {
+    //                 result += "IV";
+    //                 number -= 4;
+    //             }
+    //             while (number >= 1) {
+    //                 result += "I";
+    //                 number -= 1;
+    //             }    
+    //             return result;
+    //         }
+    //     }
+
+    //     String operator_plus(final RomanNumber roman_number) {
+    //         try {
+    //             int value1 = romanNumberToInt(this.number);
+    //             int value2 = romanNumberToInt(roman_number.number);
+    //             String result = IntToRomanNumber(value1 + value2);
+    //             return result;
+    //         } catch(Exception e) {
+    //             System.out.println(e);
+    //         }
+    //         return "";
+    //     }
+    // }
+
+    // public class IntNumber {
+    //     int number;
+    //     public IntNumber(final int number) {
+    //         this.number = number;
+    //     }
+    //     int operator_plus(final IntNumber int_number) {
+    //         return this.number + int_number.number;
+    //     }
+    // }
+
     // Преобразование строки в римское число(строку)
     public static int romanNumberToInt(String string) throws
 	Exception {
@@ -39,7 +131,7 @@ public class Main {
 	}
     
     //Преобразование арабского числа в римское
-    public static String IntToRomanNumbe(int number) throws 
+    public static String IntToRomanNumber(int number) throws 
 	Exception {
 	    if (number < 1 || number > 100)
 	        throw new
